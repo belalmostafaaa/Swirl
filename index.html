@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hoodies Shop</title>
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=National+Park:wght@200..800&display=swap" rel="stylesheet">
+  <style>
+    body {
+  background: linear-gradient(to right, #00c9ff, #92fe9d);
+  
+  font-family: 'National Park', sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  color: #000;
+}
+
+
+    .navbar {
+  background: linear-gradient(90deg, #00c6ff, #0072ff);
+  padding: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar li {
+  margin: 0 20px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #ffcc00;
+  font-size: 22px;
+  font-weight: bold;
+  padding: 10px 18px;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.navbar a:hover {
+  background-color: #00ffee;
+  color: black;
+}
+
+
+    h1 {
+      font-size: 50px;
+      margin-top: 30px;
+    }
+
+    .id1 {
+      font-size: 28px;
+      margin: 5px;
+      font-weight: bold;
+      color: #0072ff;
+    }
+
+    .id2 {
+      font-size: 24px;
+      font-weight: bold;
+      color:#1d66a1e5;
+    }
+
+    .id3 {
+      font-size: 25px;
+      color:rgb(75, 129, 230);
+      font-weight: bold;
+    }
+
+    .id4 {
+      font-size: 40px;
+      font-weight: bold;
+      color:#0072ff;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      margin: 40px 0;
+      object-fit: contain;
+      height: 300px;
+    }
+
+    .glass-card {
+      max-width: 600px;
+      margin: 40px auto;
+      padding: 30px;
+      background: rgba(255, 255, 255, 0.15);
+      border-radius: 20px;
+      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      text-align: left;
+    }
+
+    .glass-card h2 {
+      text-align: center;
+      color: #222;
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="file"],
+    textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: none;
+      border-radius: 10px;
+      font-size: 16px;
+      background: rgba(255, 255, 255, 0.8);
+    }
+
+    textarea {
+      resize: vertical;
+    }
+
+    .submit {
+      margin-top: 20px;
+      padding: 12px;
+      background-color: #222;
+      color: #ffcc00;
+      font-size: 18px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      width: 100%;
+      font-weight: bold;
+    }
+
+    button:hover {
+      background-color: #00ffee;
+      color: black;
+    }
+
+    .URL {
+      margin-top: 20px;
+      padding: 12px;
+      background-color:rgba(10, 16, 94, 0.377);
+      color: #ffcc00;
+      font-size: 25px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      width: 35%;
+      font-weight: bold;
+
+
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="index2.html">Payment</a></li>
+      <li><a href="index3.html">Delivery</a></li>
+      <li><a href="404 page.html">Vouchers</a></li>
+    </ul>
+  </nav>      
+
+  <h1>Hoodies</h1>
+  <p class="id1">Buy the style which You Want with the lowest price</p>
+  <p class="id2">You can order your Own Designed Hoodie</p>
+  <p class="id3">Upload the design which you want now and get it on a hoodie</p>
+  <img src="venom-removebg-preview.png" alt="Venom Hoodie">
+  <img src="image-removebg-preview.png" alt="Blue Hoodie">
+  <p class="id4">Want more?</p>
+  <button class="URL" onclick="window.location.href='https://www.canva.com/hoodies-sweatshirts/';">
+    Check this
+  </button>
+  
+
+  <div class="glass-card">
+    <h2>Upload Your Custom Design</h2>
+    <form action="#" method="post" enctype="multipart/form-data">
+      <label for="designName">Design Name:</label>
+      <input type="text" id="designName" name="designName" placeholder="e.g., Venom X Lightning">
+
+      <label for="designFile">Upload Your Design (PNG/JPG):</label>
+      <input type="file" id="designFile" name="designFile" accept=".png,.jpg,.jpeg" required>
+
+      <label for="designNotes">Design Notes:</label>
+      <textarea id="designNotes" name="designNotes" rows="4" placeholder="Color preferences, text placement, or special ideas..."></textarea>
+
+      <button class="submit" type="submit">Submit Design</button>
+    </form>
+  </div>
+  <audio autoplay loop>
+    <source src="Apocalypse.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+  
+  <footer class="site-footer">
+    <p>&copy; 2025 Special Hoodies. All rights reserved.</p>
+    <p>Contact us at <a href="bm5428794@gmail.com">Hoodies Shop</a></p>
+  </footer>
+  
+</body>
+</html>
