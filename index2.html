@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Payment - Venom</title>
+  <link rel="icon" type="image/png" href="favicon.png">
+  <style>
+    body {
+      background: linear-gradient(to right, #6dd5ed, #2193b0); /* slightly deeper blue than homepage */
+      font-family: 'National Park', sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #000;
+      text-align: center;
+    }
+
+    .navbar {
+  background: linear-gradient(90deg, #00c6ff, #0072ff);
+  padding: 15px 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar li {
+  margin: 0 20px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #ffcc00;
+  font-size: 22px;
+  font-weight: bold;
+  padding: 10px 18px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.navbar a:hover {
+  background-color: #00ffee;
+  color: black;
+}
+
+
+    h1 {
+      font-size: 48px;
+      margin-top: 30px;
+      color: #fff;
+    }
+
+    .payment-card {
+      max-width: 600px;
+      margin: 40px auto;
+      padding: 30px;
+      background: rgba(255, 255, 255, 0.12);
+      border-radius: 20px;
+      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.45);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      color: #fff;
+    }
+
+    .payment-card h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      text-align: left;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="number"] {
+      width: 100%;
+      padding: 12px;
+      margin-top: 5px;
+      border-radius: 10px;
+      border: none;
+      font-size: 16px;
+      background-color: rgba(255, 255, 255, 0.8);
+      color: #000;
+    }
+
+    button {
+      margin-top: 25px;
+      padding: 14px;
+      width: 100%;
+      font-size: 18px;
+      background-color: #ffcc00;
+      color: #000;
+      font-weight: bold;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #00ffee;
+      color: black;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="index2.html">Payment</a></li>
+      <li><a href="index3.html">Delivery</a></li>
+      <li><a href="404 page.html">Vouchers</a></li>
+    </ul>
+  </nav>
+
+  <h1>Secure Payment</h1>
+
+  <div class="payment-card">
+    <h2>Enter Your Payment Info</h2>
+    <form>
+      <label for="name">Full Name on Card:</label>
+      <input type="text" id="name" name="name" placeholder="John Venom" required>
+
+      <label for="cardNumber">Card Number:</label>
+      <input type="text" id="cardNumber" name="cardNumber" placeholder="1234 5678 9012 3456" required>
+
+      <label for="expiry">Expiry Date (MM/YY):</label>
+      <input type="text" id="expiry" name="expiry" placeholder="04/30" required>
+
+      <label for="cvv">CVV:</label>
+      <input type="number" id="cvv" name="cvv" placeholder="123" required>
+
+      <button type="submit">Complete Payment</button>
+    </form>
+  </div>
+  <audio autoplay loop>
+    <source src="Apocalypse.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+  
+</body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delivery Section</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <style>
+        body {
+            background-color: rgb(89, 201, 201);
+            font-family: 'National Park', sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        h1 {
+            padding: 10px;
+            margin: 10px;
+        }
+
+        h3 {
+            font-size: 20px;
+        }
+
+        .navbar {
+            background: linear-gradient(90deg, #00c6ff, #0072ff);
+            padding: 15px 0;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .navbar li {
+            margin: 0 20px;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: #ffcc00;
+            font-size: 22px;
+            font-weight: bold;
+            padding: 10px 18px;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+
+        .navbar a:hover {
+            background-color: #00ffee;
+            color: black;
+        }
+
+        .delivery-form {
+            margin-top: 30px;
+        }
+
+        input, select {
+            font-size: 18px;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 8px;
+            border: none;
+            width: 250px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+
+        .estimate {
+            font-size: 22px;
+            margin-top: 30px;
+            color: black;
+        }
+
+        button {
+      margin-top: 25px;
+      padding: 14px;
+      width: 30%;
+      font-size: 18px;
+      background-color: #ffcc00;
+      color: #000;
+      font-weight: bold;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index2.html">Payment</a></li>
+            <li><a href="index3.html">Delivery</a></li>
+            <li><a href="404 page.html">Vouchers</a></li>
+        </ul>
+    </nav>
+
+    <h1>Delivery Information</h1>
+
+    <div class="delivery-form">
+        <h3>Your Email:</h3>
+        <input type="email" placeholder="Enter your email" required>
+
+        <h3>Location Details:</h3>
+        <select>
+            <option disabled selected>Select your country</option>
+            <option>USA</option>
+            <option>Canada</option>
+            <option>Egypt</option>
+            <option>India</option>
+            <option>UK</option>
+        </select><br>
+
+        <input type="text" placeholder="City / District" required><br>
+        <input type="text" placeholder="Street or Landmark" required><br>
+
+        <button type="submit">Submit Location</button>
+    </div>
+
+    <p class="estimate">📦 Estimated Delivery: 3 - 7 Business Days</p>
+    <audio autoplay loop>
+      <source src="Apocalypse.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+</body>
+</html>
